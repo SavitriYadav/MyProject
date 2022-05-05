@@ -1,2 +1,0 @@
-This is one.txt file
-This is line number 2 in one.txt
