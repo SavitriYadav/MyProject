@@ -1,0 +1,23 @@
+{% extends 'app/base.html' %}
+{% block title %}About Us{% endblock %}
+{% block body %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'app/css/aboutus.css' %}">
+{{block.super}}
+
+    <video autoplay muted loop class="background_vedio"  style="width:100%; height:90vh; z-index: -1; position: fixed; display: flex;" >
+        <source src="{% static 'app/media/background.mp4' %}">
+    </video>
+
+<!-- <div class="cont"> -->
+<h2 style="margin-right: 90px; text-align: center; color: white; margin-top: 150px;" > KEY PEOPLE </h2>
+<strong><a href="{% url 'stephen' %}" style="color: white; text-align: center; margin-left: 550px;">STEPHEN MASCHARENES</a></strong>
+<p style="margin-right: 10px; color: white; text-align: center;">MANAGING DIRECTOR</p>
+<strong><a href="{% url 'vanita' %}" style="color: white; text-align: center; margin-left: 550px;">VANITA MASCHARENES</a></strong>
+<p style="margin-right: 40px; text-align: center; color: white;">BUSINESS HEAD</p>
+<strong><a href="{% url 'swapnil' %}" style="color: white;; text-align: center; margin-left: 550px;">SWAPNIL JOSHI</a></strong>
+<p style="margin-right: 35px; text-align: center; color: white;">VFX CG DIRECTOR</p>
+<strong><a href="{% url 'pritam' %}" style="color: white; text-align: center; margin-left: 550px;">PRITAM SHETTIGAR</a></strong>
+<p style="margin-right: 25px; text-align: center; color: white;">CREATIVE DIRECTOR</p>
+<!-- </div> -->
+{% endblock %}

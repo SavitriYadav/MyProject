@@ -1,0 +1,37 @@
+{% extends 'app/base.html' %}
+{% block title %}Home{% endblock %}
+
+{% block body %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'app/css/home.css' %}">
+{{ block.super }}
+
+<div class="container-fulid">
+  <div class="row">
+    <div class="col-md-6">   
+      <video autoplay muted loop class="home_vedio" width="700" height="500">
+        <source src="{% static 'app/media/home.mp4' %}">
+      </video>
+    </div>
+  
+    <div class="col-md-6">
+      <p style="color: aliceblue; margin-bottom: 100px; margin-right: 100px; text-align: center; font-family: 'Times New Roman';">Lorem ipsum dolor sit amet consectetur 
+          adipisicing elit. Eius, facilis eaque. Assumenda rem doloremque cumque numquam illum nihil, 
+          minus fugiat quas sapiente voluptas obcaecati architecto beatae dolor, nostrum natus excepturi.</p>
+    </div>
+  </div>
+</div>  
+{% endblock %}  
+<!-- </div> -->
+  
+    <!-- <div class="col-md-6" style="color: antiquewhite; width: 50%;">Hi</div>
+    <p style="color: aliceblue;">Lorem ipsum dolor sit amet consectetur 
+      adipisicing elit. Eius, facilis eaque. Assumenda rem doloremque cumque numquam illum nihil, 
+      minus fugiat quas sapiente voluptas obcaecati architecto beatae dolor, nostrum natus excepturi.</p>   -->
+  
+
+  <!-- <div class="cont"> 
+    <p>Lorem ipsum dolor sit amet consectetur 
+      adipisicing elit. Eius, facilis eaque. Assumenda rem doloremque cumque numquam illum nihil, 
+      minus fugiat quas sapiente voluptas obcaecati architecto beatae dolor, nostrum natus excepturi.</p>
+  </div>   -->

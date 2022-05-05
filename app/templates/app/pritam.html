@@ -1,0 +1,28 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Contact{% endblock %}
+{% block body %}
+
+
+<video autoplay muted class="background_vedio"  style="width:100%; height:90vh; z-index: -1; position: fixed; display: flex;" >
+    <source src="{% static 'app/media/background.mp4' %}">
+</video>
+
+<div class="container-fulid">
+<div class="row">
+    <div class="col-md-5"> 
+        <img src="{% static 'app/images/s.png'  %}" width="250" height="250" alt="" style="border-radius: 70%; margin-top: 80px; margin-left: 150px;">
+    </div>
+    <div class="col-md-6"> 
+        <strong><p style="text-align: left; margin-top: 140px; margin-bottom: 5px; font-size: 14; font-family: 'Times New Roman';">PRITAM SHETTIGAR</p></strong>
+        <strong><p style="text-align: left; margin-bottom: 20px; font-size: 12; font-family: 'Times New Roman';">CREATIVE DIRECTOR</p></strong>
+        <p style="text-align: left; margin-top: 20px; font-family: 'Times New Roman';">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum assumenda<br> 
+            minus nisi quaerat dignissimos iusto possimus commodi libero a autem?<br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quidem.</p>
+    </div>        
+</div>
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Contact{% endblock %}
+{% block body %}
+
+<link rel="stylesheet" href="{% static 'app/css/contact.css' %}">
+{{block.super}}
+
+    <video autoplay muted loop class="background_vedio"  style="width:100%; height:90vh; z-index: -1; position: fixed; display: flex;" >
+        <source src="{% static 'app/media/background.mp4' %}">
+    </video>
+
+<!-- <div class="cont"> -->
+<strong><p style="margin-left:600px; color: white; margin-top: 80px; font-size:xx-large; text-align:left;">CONTACT</p></strong>
+<p style="margin-left:700px; color: white; margin-top: 0px; font-size:small; text-align:left"><strong>ADDRESS:</strong><br>INDUSTRIAL ESTATE<br>BORIVALI EAST, MUMBAI. INDIA<br>
+    NEXT TO METRO MALL<br>
+ PIN: 400101<br></p>
+<p style="margin-left:700px; color: white; margin-top: 5px; font-size:small; text-align:left"><strong>EMAIL:</strong><br>WWW.CINEGANCEMEDIA.COM<br>JOBS@CINEGANCEMEDIA.COM<br></p>
+ <p style="margin-left:700px; color: white; margin-top: 5px; font-size:small; text-align:left"><strong>PHONE:</strong><br>
+    9820150497</P><br>
+ <!-- </div> -->
+{% endblock %}

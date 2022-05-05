@@ -1,0 +1,41 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}VFX{% endblock %}
+{% block body %}
+
+<div class="grid-container">
+    <div>
+        <h3 style="color: blue; padding-top: 20px; margin-left: 20px; font-style: normal; font-size: medium">VFX / CG</h3>
+        <p style="color: white; padding-top: 5px; margin-left: 20px; font-family: 'Times New Roman'; text-align: left; font-size: small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut quibusdam quisquam <br>
+            voluptates maiores voluptate commodi corporis dolores, impedit inventore nihil <br>
+            reprehenderit nesciunt repudiandae non vel ullam consequuntur blanditiis vero eum.</p>
+    </div>   
+    
+        
+    <div class="grid-item" style="display:grid; grid-template-columns:repeat(10,1fr); grid-template-rows:repeat(10,5vw);grid-gap:15px;">        
+        <figure class="grid-item" style="grid-column-start: 1; grid-column-end: 6; grid-row-start: 1; grid-row-end: 10; ">    
+            <img src="{% static 'app/images/spider.jpg' %}" style="width: 100%; height: 100%; object-fit: cover;"   alt="">
+        </figure>    
+            
+        <figure class="grid-item"  style="grid-column-start: 6; grid-column-end: 10; grid-row-start: 1; grid-row-end: 10; ">
+            <img src="{% static 'app/images/toofan.webp' %}" style="width: 100%; height: 100%; object-fit: cover;" alt="">
+        </figure>
+        <figure class="grid-item" style="grid-column-start: 1; grid-column-end: 4; grid-row-start: 10; grid-row-end: 12; ">
+            <img src="{% static 'app/images/Mere Watan.jpg' %}" style="width: 100%; height: 100%; object-fit: cover;" alt="">
+        </figure>
+        <figure class="grid-item" style="grid-column-start: 4; grid-column-end: 6; grid-row-start: 10; grid-row-end: 12; ">
+            <img src="{% static 'app/images/prasthanam.jpg' %}" style="width: 100%; height: 100%; object-fit: cover;" alt="">
+        </figure>
+        <figure class="grid-item" style="grid-column-start: 6; grid-column-end: 10; grid-row-start: 10; grid-row-end: 12; ">
+            <img src="{% static 'app/images/Disney.jpg' %}" style="width: 100%; height: 100%; object-fit: cover;" alt="">
+        </figure>
+        
+
+       
+    
+
+    </div>
+
+</div>
+
+{% endblock %}
